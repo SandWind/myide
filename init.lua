@@ -5,7 +5,7 @@ require("keybindings")
 -- Packer插件管理
 require("plugins")
 -- 主题设置
---require("colorscheme")
+require("colorscheme")
 -- 自动命令
 --require("autocmds")
 -- 插件配置
