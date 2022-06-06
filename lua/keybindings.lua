@@ -31,7 +31,7 @@ map("c", "<C-k>", "<C-p>", { noremap = false })
 map("n", "<leader>w", ":w<CR>", opt)
 map("n", "<leader>wq", ":wqa!<CR>", opt)
 map("n","<C-s>","w<CR>",opt) ---Ctrl+s保存文件
-map("n","<C-q>",":wqa!<CR>",opt)
+map("n","<C-q>",":q!<CR>",opt)
 
 map("i","<C-s>","<ESC>w<CR>",opt)
 
