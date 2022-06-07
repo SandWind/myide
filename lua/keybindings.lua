@@ -32,7 +32,7 @@ map("n", "<leader>w", ":w<CR>", opt)
 map("n", "<leader>wq", ":wqa!<CR>", opt)
 map("n","<C-s>","w<CR>",opt) ---Ctrl+s保存文件
 map("n","<C-q>",":q!<CR>",opt)
-
+map('n','<C-z>',':tabnew',opt)
 map("i","<C-s>","<ESC>w<CR>",opt)
 
 -- fix :set wrap
