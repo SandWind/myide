@@ -51,6 +51,7 @@ packer.startup({
       "nvim-lualine/lualine.nvim",
       requires = { "kyazdani42/nvim-web-devicons" },
     })
+    --[[
     use("arkav/lualine-lsp-progress")
     -- telescope
     use({
@@ -146,7 +147,9 @@ packer.startup({
     if paccker_bootstrap then
       packer.sync()
     end
+    ]]
   end,
+
   config = {
     -- 锁定插件版本在snapshots目录
     snapshot_path = require("packer.util").join_paths(vim.fn.stdpath("config"), "snapshots"),
@@ -169,6 +172,7 @@ packer.startup({
     --   end,
     -- },
   },
+
 })
 
 -- 每次保存 plugins.lua 自动安装插件
