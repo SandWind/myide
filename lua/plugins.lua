@@ -11,7 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "clone",
     "--depth",
     "1",
-    "git@github.com:wbthomason/packer.nvim.git",
+    "git@github.com:SandWind/packer.nvim.git",
     -- "https://gitcode.net/mirrors/wbthomason/packer.nvim",
     install_path,
   })
@@ -34,7 +34,7 @@ end
 packer.startup({
   function(use)
     -- Packer 可以升级自己
-    use("wbthomason/packer.nvim")
+    use("SandWind/packer.nvim")
     -------------------------- plugins -------------------------------------------
     -- nvim-tree
     use({
@@ -59,13 +59,14 @@ packer.startup({
     -- telescope extensions
     use("LinArcX/telescope-env.nvim")
     use("nvim-telescope/telescope-ui-select.nvim")
-    --[[
-    use("arkav/lualine-lsp-progress")
-    
     -- dashboard-nvim
     use("glepnir/dashboard-nvim")
     -- project
     use("ahmedkhalf/project.nvim")
+
+    --[[
+    use("arkav/lualine-lsp-progress")
+    
     -- treesitter
     use({
       "nvim-treesitter/nvim-treesitter",
