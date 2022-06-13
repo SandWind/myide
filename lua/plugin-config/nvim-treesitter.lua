@@ -12,7 +12,7 @@ treesitter.setup({
 
   -- 启用代码高亮模块
   highlight = {
-    enable = true,
+    enable = false,
     additional_vim_regex_highlighting = false,
   },
   -- 启用增量选择模块
