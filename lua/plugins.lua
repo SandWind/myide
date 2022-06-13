@@ -58,28 +58,34 @@ packer.startup({
     })
     -- telescope extensions
     use("LinArcX/telescope-env.nvim")
+    
     use("nvim-telescope/telescope-ui-select.nvim")
+    
     -- dashboard-nvim
     use("glepnir/dashboard-nvim")
+    
     -- project
     use("ahmedkhalf/project.nvim")
-
-    --[[
-    use("arkav/lualine-lsp-progress")
     
     -- treesitter
     use({
       "nvim-treesitter/nvim-treesitter",
       run = ":TSUpdate",
     })
-    use("p00f/nvim-ts-rainbow")
-    -- indent-blankline
-    use("lukas-reineke/indent-blankline.nvim")
+
     --------------------- LSP --------------------
-    -- use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
+    --use({ "williamboman/nvim-lsp-installer", commit = "36b44679f7cc73968dbb3b09246798a19f7c14e0" })
     use({ "williamboman/nvim-lsp-installer" })
     -- Lspconfig
     use({ "neovim/nvim-lspconfig" })
+    
+    use("arkav/lualine-lsp-progress")
+    
+    
+    use("p00f/nvim-ts-rainbow")
+    -- indent-blankline
+    use("lukas-reineke/indent-blankline.nvim")
+
     -- 补全引擎
     use("hrsh7th/nvim-cmp")
     -- Snippet 引擎
@@ -149,7 +155,6 @@ packer.startup({
     if paccker_bootstrap then
       packer.sync()
     end
-    ]]
   end,
 
   config = {
